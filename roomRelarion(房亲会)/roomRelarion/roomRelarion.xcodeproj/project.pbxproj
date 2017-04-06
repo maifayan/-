@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1831D1281E9485CF00A1CA16 /* UITextField+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */; };
+		1831E4361E9078CC00739F2D /* XMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831E4351E9078CC00739F2D /* XMConst.m */; };
+		185390D41E8F47B5007EB747 /* informationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185390D31E8F47B5007EB747 /* informationCell.m */; };
+		185A5E801E8B5AD600E029D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5E7F1E8B5AD600E029D2 /* main.m */; };
+		185A5E891E8B5AD600E029D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A5E871E8B5AD600E029D2 /* Main.storyboard */; };
+		185A5E8B1E8B5AD600E029D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185A5E8A1E8B5AD600E029D2 /* Assets.xcassets */; };
+		185A5E8E1E8B5AD600E029D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A5E8C1E8B5AD600E029D2 /* LaunchScreen.storyboard */; };
+		185A5E991E8B5AD600E029D2 /* roomRelarionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5E981E8B5AD600E029D2 /* roomRelarionTests.m */; };
+		185A5EA41E8B5AD600E029D2 /* roomRelarionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EA31E8B5AD600E029D2 /* roomRelarionUITests.m */; };
+		185A5EB41E8B5B9800E029D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EB31E8B5B9800E029D2 /* AppDelegate.m */; };
+		185A5EDC1E8B5C7000E029D2 /* clientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EB91E8B5C7000E029D2 /* clientController.m */; };
+		185A5EDD1E8B5C7000E029D2 /* counselorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EBF1E8B5C7000E029D2 /* counselorController.m */; };
+		185A5EE21E8B5C7000E029D2 /* YLZNTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EDB1E8B5C7000E029D2 /* YLZNTabBar.m */; };
+		185A5EE51E8B5D9600E029D2 /* YLZNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EE41E8B5D9600E029D2 /* YLZNTabBarController.m */; };
+		185A5EEC1E8B9F4F00E029D2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A5EEB1E8B9F4F00E029D2 /* MapKit.framework */; };
+		185A5EF31E8CACED00E029D2 /* houseResourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EF21E8CACED00E029D2 /* houseResourceController.m */; };
+		185A5EF81E8CB93300E029D2 /* mineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EF71E8CB93300E029D2 /* mineController.m */; };
+		185A5F041E8CFD3200E029D2 /* loginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5F031E8CFD3200E029D2 /* loginRegisterController.m */; };
+		1873DB241E8DEDA200504910 /* mineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB231E8DEDA200504910 /* mineCell.m */; };
+		1873DB2E1E8DFE1000504910 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB2D1E8DFE1000504910 /* UIBarButtonItem+Item.m */; };
+		1873DB341E8E053600504910 /* YNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB331E8E053600504910 /* YNavigationController.m */; };
+		1873DB371E8E266B00504910 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB361E8E266B00504910 /* UIView+frame.m */; };
+		1873DB3E1E8E508200504910 /* personalInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB3D1E8E508200504910 /* personalInformationController.m */; };
+		1873DB411E8E51E300504910 /* personalInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB401E8E51E300504910 /* personalInformationCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185A5E951E8B5AD600E029D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185A5E731E8B5AD600E029D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185A5E7A1E8B5AD600E029D2;
+			remoteInfo = roomRelarion;
+		};
+		185A5EA01E8B5AD600E029D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185A5E731E8B5AD600E029D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185A5E7A1E8B5AD600E029D2;
+			remoteInfo = roomRelarion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1831D1261E9485CF00A1CA16 /* UITextField+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+IndexPath.h"; sourceTree = "<group>"; };
+		1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+IndexPath.m"; sourceTree = "<group>"; };
+		1831E4341E9078CC00739F2D /* XMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMConst.h; sourceTree = "<group>"; };
+		1831E4351E9078CC00739F2D /* XMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMConst.m; sourceTree = "<group>"; };
+		185390D21E8F47B5007EB747 /* informationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = informationCell.h; sourceTree = "<group>"; };
+		185390D31E8F47B5007EB747 /* informationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = informationCell.m; sourceTree = "<group>"; };
+		185A5E7B1E8B5AD600E029D2 /* roomRelarion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roomRelarion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		185A5E7F1E8B5AD600E029D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		185A5E881E8B5AD600E029D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		185A5E8A1E8B5AD600E029D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		185A5E8D1E8B5AD600E029D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		185A5E8F1E8B5AD600E029D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185A5E941E8B5AD600E029D2 /* roomRelarionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roomRelarionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		185A5E981E8B5AD600E029D2 /* roomRelarionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = roomRelarionTests.m; sourceTree = "<group>"; };
+		185A5E9A1E8B5AD600E029D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185A5E9F1E8B5AD600E029D2 /* roomRelarionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = roomRelarionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		185A5EA31E8B5AD600E029D2 /* roomRelarionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = roomRelarionUITests.m; sourceTree = "<group>"; };
+		185A5EA51E8B5AD600E029D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185A5EB21E8B5B9800E029D2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		185A5EB31E8B5B9800E029D2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		185A5EB81E8B5C7000E029D2 /* clientController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clientController.h; sourceTree = "<group>"; };
+		185A5EB91E8B5C7000E029D2 /* clientController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clientController.m; sourceTree = "<group>"; };
+		185A5EBE1E8B5C7000E029D2 /* counselorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = counselorController.h; sourceTree = "<group>"; };
+		185A5EBF1E8B5C7000E029D2 /* counselorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = counselorController.m; sourceTree = "<group>"; };
+		185A5EDA1E8B5C7000E029D2 /* YLZNTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZNTabBar.h; sourceTree = "<group>"; };
+		185A5EDB1E8B5C7000E029D2 /* YLZNTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZNTabBar.m; sourceTree = "<group>"; };
+		185A5EE31E8B5D9600E029D2 /* YLZNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLZNTabBarController.h; sourceTree = "<group>"; };
+		185A5EE41E8B5D9600E029D2 /* YLZNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLZNTabBarController.m; sourceTree = "<group>"; };
+		185A5EE61E8B64E800E029D2 /* roomRelarion.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = roomRelarion.pch; path = "../../Main(主要)/roomRelarion.pch"; sourceTree = "<group>"; };
+		185A5EEB1E8B9F4F00E029D2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		185A5EF11E8CACED00E029D2 /* houseResourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houseResourceController.h; sourceTree = "<group>"; };
+		185A5EF21E8CACED00E029D2 /* houseResourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = houseResourceController.m; sourceTree = "<group>"; };
+		185A5EF61E8CB93300E029D2 /* mineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mineController.h; sourceTree = "<group>"; };
+		185A5EF71E8CB93300E029D2 /* mineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mineController.m; sourceTree = "<group>"; };
+		185A5F021E8CFD3200E029D2 /* loginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loginRegisterController.h; path = ../view/loginRegisterController.h; sourceTree = "<group>"; };
+		185A5F031E8CFD3200E029D2 /* loginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = loginRegisterController.m; path = ../view/loginRegisterController.m; sourceTree = "<group>"; };
+		1873DB221E8DEDA200504910 /* mineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mineCell.h; sourceTree = "<group>"; };
+		1873DB231E8DEDA200504910 /* mineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mineCell.m; sourceTree = "<group>"; };
+		1873DB2C1E8DFE1000504910 /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		1873DB2D1E8DFE1000504910 /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		1873DB321E8E053600504910 /* YNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNavigationController.h; sourceTree = "<group>"; };
+		1873DB331E8E053600504910 /* YNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNavigationController.m; sourceTree = "<group>"; };
+		1873DB351E8E266B00504910 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		1873DB361E8E266B00504910 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		1873DB3C1E8E508200504910 /* personalInformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalInformationController.h; sourceTree = "<group>"; };
+		1873DB3D1E8E508200504910 /* personalInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalInformationController.m; sourceTree = "<group>"; };
+		1873DB3F1E8E51E300504910 /* personalInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalInformationCell.h; sourceTree = "<group>"; };
+		1873DB401E8E51E300504910 /* personalInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalInformationCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		185A5E781E8B5AD600E029D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185A5EEC1E8B9F4F00E029D2 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185A5E911E8B5AD600E029D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185A5E9C1E8B5AD600E029D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1831E4301E90783B00739F2D /* other */ = {
+			isa = PBXGroup;
+			children = (
+				1831E4311E90783B00739F2D /* contorller */,
+				1831E4321E90783B00739F2D /* model */,
+				1831E4331E90783B00739F2D /* view */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		1831E4311E90783B00739F2D /* contorller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = contorller;
+			sourceTree = "<group>";
+		};
+		1831E4321E90783B00739F2D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1831E4331E90783B00739F2D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EE61E8B64E800E029D2 /* roomRelarion.pch */,
+				1831E4341E9078CC00739F2D /* XMConst.h */,
+				1831E4351E9078CC00739F2D /* XMConst.m */,
+				1831D1261E9485CF00A1CA16 /* UITextField+IndexPath.h */,
+				1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		185A5E721E8B5AD600E029D2 = {
+			isa = PBXGroup;
+			children = (
+				185A5E7D1E8B5AD600E029D2 /* roomRelarion */,
+				185A5E971E8B5AD600E029D2 /* roomRelarionTests */,
+				185A5EA21E8B5AD600E029D2 /* roomRelarionUITests */,
+				185A5E7C1E8B5AD600E029D2 /* Products */,
+				185A5EEA1E8B9F4F00E029D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		185A5E7C1E8B5AD600E029D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				185A5E7B1E8B5AD600E029D2 /* roomRelarion.app */,
+				185A5E941E8B5AD600E029D2 /* roomRelarionTests.xctest */,
+				185A5E9F1E8B5AD600E029D2 /* roomRelarionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		185A5E7D1E8B5AD600E029D2 /* roomRelarion */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EB51E8B5C7000E029D2 /* base */,
+				1831E4301E90783B00739F2D /* other */,
+				185A5EB11E8B5B9800E029D2 /* Main(主要) */,
+				185A5E871E8B5AD600E029D2 /* Main.storyboard */,
+				185A5E8A1E8B5AD600E029D2 /* Assets.xcassets */,
+				185A5E8C1E8B5AD600E029D2 /* LaunchScreen.storyboard */,
+				185A5E8F1E8B5AD600E029D2 /* Info.plist */,
+				185A5E7E1E8B5AD600E029D2 /* Supporting Files */,
+			);
+			path = roomRelarion;
+			sourceTree = "<group>";
+		};
+		185A5E7E1E8B5AD600E029D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				185A5E7F1E8B5AD600E029D2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		185A5E971E8B5AD600E029D2 /* roomRelarionTests */ = {
+			isa = PBXGroup;
+			children = (
+				185A5E981E8B5AD600E029D2 /* roomRelarionTests.m */,
+				185A5E9A1E8B5AD600E029D2 /* Info.plist */,
+			);
+			path = roomRelarionTests;
+			sourceTree = "<group>";
+		};
+		185A5EA21E8B5AD600E029D2 /* roomRelarionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EA31E8B5AD600E029D2 /* roomRelarionUITests.m */,
+				185A5EA51E8B5AD600E029D2 /* Info.plist */,
+			);
+			path = roomRelarionUITests;
+			sourceTree = "<group>";
+		};
+		185A5EB11E8B5B9800E029D2 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EB21E8B5B9800E029D2 /* AppDelegate.h */,
+				185A5EB31E8B5B9800E029D2 /* AppDelegate.m */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		185A5EB51E8B5C7000E029D2 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EED1E8CACA800E029D2 /* houseResource(房源) */,
+				185A5EB61E8B5C7000E029D2 /* client(客户) */,
+				185A5EBC1E8B5C7000E029D2 /* counselor(置业顾问) */,
+				185A5EC81E8B5C7000E029D2 /* mine(我的) */,
+				185A5ED41E8B5C7000E029D2 /* YLZNBase */,
+				1873DB2B1E8DFE1000504910 /* Category */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		185A5EB61E8B5C7000E029D2 /* client(客户) */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EB71E8B5C7000E029D2 /* contorller */,
+				185A5EBA1E8B5C7000E029D2 /* model */,
+				185A5EBB1E8B5C7000E029D2 /* view */,
+			);
+			path = "client(客户)";
+			sourceTree = "<group>";
+		};
+		185A5EB71E8B5C7000E029D2 /* contorller */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EB81E8B5C7000E029D2 /* clientController.h */,
+				185A5EB91E8B5C7000E029D2 /* clientController.m */,
+			);
+			path = contorller;
+			sourceTree = "<group>";
+		};
+		185A5EBA1E8B5C7000E029D2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		185A5EBB1E8B5C7000E029D2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		185A5EBC1E8B5C7000E029D2 /* counselor(置业顾问) */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EBD1E8B5C7000E029D2 /* contorller */,
+				185A5EC01E8B5C7000E029D2 /* model */,
+				185A5EC11E8B5C7000E029D2 /* view */,
+			);
+			path = "counselor(置业顾问)";
+			sourceTree = "<group>";
+		};
+		185A5EBD1E8B5C7000E029D2 /* contorller */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EBE1E8B5C7000E029D2 /* counselorController.h */,
+				185A5EBF1E8B5C7000E029D2 /* counselorController.m */,
+			);
+			path = contorller;
+			sourceTree = "<group>";
+		};
+		185A5EC01E8B5C7000E029D2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		185A5EC11E8B5C7000E029D2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		185A5EC81E8B5C7000E029D2 /* mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EC91E8B5C7000E029D2 /* contorller */,
+				185A5ECC1E8B5C7000E029D2 /* model */,
+				185A5ECD1E8B5C7000E029D2 /* view */,
+			);
+			path = "mine(我的)";
+			sourceTree = "<group>";
+		};
+		185A5EC91E8B5C7000E029D2 /* contorller */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EF61E8CB93300E029D2 /* mineController.h */,
+				185A5EF71E8CB93300E029D2 /* mineController.m */,
+				1873DB3C1E8E508200504910 /* personalInformationController.h */,
+				1873DB3D1E8E508200504910 /* personalInformationController.m */,
+				185A5F021E8CFD3200E029D2 /* loginRegisterController.h */,
+				185A5F031E8CFD3200E029D2 /* loginRegisterController.m */,
+			);
+			path = contorller;
+			sourceTree = "<group>";
+		};
+		185A5ECC1E8B5C7000E029D2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		185A5ECD1E8B5C7000E029D2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1873DB221E8DEDA200504910 /* mineCell.h */,
+				1873DB231E8DEDA200504910 /* mineCell.m */,
+				1873DB3F1E8E51E300504910 /* personalInformationCell.h */,
+				1873DB401E8E51E300504910 /* personalInformationCell.m */,
+				185390D21E8F47B5007EB747 /* informationCell.h */,
+				185390D31E8F47B5007EB747 /* informationCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		185A5ED41E8B5C7000E029D2 /* YLZNBase */ = {
+			isa = PBXGroup;
+			children = (
+				185A5ED51E8B5C7000E029D2 /* contorller */,
+				185A5ED81E8B5C7000E029D2 /* model */,
+				185A5ED91E8B5C7000E029D2 /* view */,
+			);
+			path = YLZNBase;
+			sourceTree = "<group>";
+		};
+		185A5ED51E8B5C7000E029D2 /* contorller */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EE31E8B5D9600E029D2 /* YLZNTabBarController.h */,
+				185A5EE41E8B5D9600E029D2 /* YLZNTabBarController.m */,
+				1873DB321E8E053600504910 /* YNavigationController.h */,
+				1873DB331E8E053600504910 /* YNavigationController.m */,
+			);
+			path = contorller;
+			sourceTree = "<group>";
+		};
+		185A5ED81E8B5C7000E029D2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		185A5ED91E8B5C7000E029D2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EDA1E8B5C7000E029D2 /* YLZNTabBar.h */,
+				185A5EDB1E8B5C7000E029D2 /* YLZNTabBar.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		185A5EEA1E8B9F4F00E029D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EEB1E8B9F4F00E029D2 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		185A5EED1E8CACA800E029D2 /* houseResource(房源) */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EEE1E8CACA800E029D2 /* contorller */,
+				185A5EEF1E8CACA800E029D2 /* model */,
+				185A5EF01E8CACA800E029D2 /* view */,
+			);
+			path = "houseResource(房源)";
+			sourceTree = "<group>";
+		};
+		185A5EEE1E8CACA800E029D2 /* contorller */ = {
+			isa = PBXGroup;
+			children = (
+				185A5EF11E8CACED00E029D2 /* houseResourceController.h */,
+				185A5EF21E8CACED00E029D2 /* houseResourceController.m */,
+			);
+			path = contorller;
+			sourceTree = "<group>";
+		};
+		185A5EEF1E8CACA800E029D2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		185A5EF01E8CACA800E029D2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1873DB2B1E8DFE1000504910 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1873DB2C1E8DFE1000504910 /* UIBarButtonItem+Item.h */,
+				1873DB2D1E8DFE1000504910 /* UIBarButtonItem+Item.m */,
+				1873DB351E8E266B00504910 /* UIView+frame.h */,
+				1873DB361E8E266B00504910 /* UIView+frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		185A5E7A1E8B5AD600E029D2 /* roomRelarion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185A5EA81E8B5AD600E029D2 /* Build configuration list for PBXNativeTarget "roomRelarion" */;
+			buildPhases = (
+				185A5E771E8B5AD600E029D2 /* Sources */,
+				185A5E781E8B5AD600E029D2 /* Frameworks */,
+				185A5E791E8B5AD600E029D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = roomRelarion;
+			productName = roomRelarion;
+			productReference = 185A5E7B1E8B5AD600E029D2 /* roomRelarion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		185A5E931E8B5AD600E029D2 /* roomRelarionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185A5EAB1E8B5AD600E029D2 /* Build configuration list for PBXNativeTarget "roomRelarionTests" */;
+			buildPhases = (
+				185A5E901E8B5AD600E029D2 /* Sources */,
+				185A5E911E8B5AD600E029D2 /* Frameworks */,
+				185A5E921E8B5AD600E029D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185A5E961E8B5AD600E029D2 /* PBXTargetDependency */,
+			);
+			name = roomRelarionTests;
+			productName = roomRelarionTests;
+			productReference = 185A5E941E8B5AD600E029D2 /* roomRelarionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		185A5E9E1E8B5AD600E029D2 /* roomRelarionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185A5EAE1E8B5AD600E029D2 /* Build configuration list for PBXNativeTarget "roomRelarionUITests" */;
+			buildPhases = (
+				185A5E9B1E8B5AD600E029D2 /* Sources */,
+				185A5E9C1E8B5AD600E029D2 /* Frameworks */,
+				185A5E9D1E8B5AD600E029D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185A5EA11E8B5AD600E029D2 /* PBXTargetDependency */,
+			);
+			name = roomRelarionUITests;
+			productName = roomRelarionUITests;
+			productReference = 185A5E9F1E8B5AD600E029D2 /* roomRelarionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		185A5E731E8B5AD600E029D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = YaLeZhiNeng;
+				TargetAttributes = {
+					185A5E7A1E8B5AD600E029D2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					185A5E931E8B5AD600E029D2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EC5D6VRLX6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 185A5E7A1E8B5AD600E029D2;
+					};
+					185A5E9E1E8B5AD600E029D2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EC5D6VRLX6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 185A5E7A1E8B5AD600E029D2;
+					};
+				};
+			};
+			buildConfigurationList = 185A5E761E8B5AD600E029D2 /* Build configuration list for PBXProject "roomRelarion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 185A5E721E8B5AD600E029D2;
+			productRefGroup = 185A5E7C1E8B5AD600E029D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				185A5E7A1E8B5AD600E029D2 /* roomRelarion */,
+				185A5E931E8B5AD600E029D2 /* roomRelarionTests */,
+				185A5E9E1E8B5AD600E029D2 /* roomRelarionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		185A5E791E8B5AD600E029D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185A5E8E1E8B5AD600E029D2 /* LaunchScreen.storyboard in Resources */,
+				185A5E8B1E8B5AD600E029D2 /* Assets.xcassets in Resources */,
+				185A5E891E8B5AD600E029D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185A5E921E8B5AD600E029D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185A5E9D1E8B5AD600E029D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185A5E771E8B5AD600E029D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185A5F041E8CFD3200E029D2 /* loginRegisterController.m in Sources */,
+				185A5EDC1E8B5C7000E029D2 /* clientController.m in Sources */,
+				185A5EF81E8CB93300E029D2 /* mineController.m in Sources */,
+				1873DB371E8E266B00504910 /* UIView+frame.m in Sources */,
+				185A5EB41E8B5B9800E029D2 /* AppDelegate.m in Sources */,
+				1873DB3E1E8E508200504910 /* personalInformationController.m in Sources */,
+				185A5EF31E8CACED00E029D2 /* houseResourceController.m in Sources */,
+				185390D41E8F47B5007EB747 /* informationCell.m in Sources */,
+				185A5EE21E8B5C7000E029D2 /* YLZNTabBar.m in Sources */,
+				1873DB2E1E8DFE1000504910 /* UIBarButtonItem+Item.m in Sources */,
+				1873DB241E8DEDA200504910 /* mineCell.m in Sources */,
+				185A5E801E8B5AD600E029D2 /* main.m in Sources */,
+				185A5EDD1E8B5C7000E029D2 /* counselorController.m in Sources */,
+				1873DB341E8E053600504910 /* YNavigationController.m in Sources */,
+				1873DB411E8E51E300504910 /* personalInformationCell.m in Sources */,
+				1831D1281E9485CF00A1CA16 /* UITextField+IndexPath.m in Sources */,
+				1831E4361E9078CC00739F2D /* XMConst.m in Sources */,
+				185A5EE51E8B5D9600E029D2 /* YLZNTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185A5E901E8B5AD600E029D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185A5E991E8B5AD600E029D2 /* roomRelarionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185A5E9B1E8B5AD600E029D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185A5EA41E8B5AD600E029D2 /* roomRelarionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		185A5E961E8B5AD600E029D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185A5E7A1E8B5AD600E029D2 /* roomRelarion */;
+			targetProxy = 185A5E951E8B5AD600E029D2 /* PBXContainerItemProxy */;
+		};
+		185A5EA11E8B5AD600E029D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185A5E7A1E8B5AD600E029D2 /* roomRelarion */;
+			targetProxy = 185A5EA01E8B5AD600E029D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		185A5E871E8B5AD600E029D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185A5E881E8B5AD600E029D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		185A5E8C1E8B5AD600E029D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185A5E8D1E8B5AD600E029D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		185A5EA61E8B5AD600E029D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		185A5EA71E8B5AD600E029D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		185A5EA91E8B5AD600E029D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "/Users/apple/Desktop/项目/git/roomRelarion(房亲会)/roomRelarion/roomRelarion/Main(主要)/roomRelarion.pch";
+				INFOPLIST_FILE = roomRelarion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLZN.roomRelarion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		185A5EAA1E8B5AD600E029D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "/Users/apple/Desktop/项目/git/roomRelarion(房亲会)/roomRelarion/roomRelarion/Main(主要)/roomRelarion.pch";
+				INFOPLIST_FILE = roomRelarion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLZN.roomRelarion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		185A5EAC1E8B5AD600E029D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EC5D6VRLX6;
+				INFOPLIST_FILE = roomRelarionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLZN.roomRelarionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roomRelarion.app/roomRelarion";
+			};
+			name = Debug;
+		};
+		185A5EAD1E8B5AD600E029D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EC5D6VRLX6;
+				INFOPLIST_FILE = roomRelarionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLZN.roomRelarionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/roomRelarion.app/roomRelarion";
+			};
+			name = Release;
+		};
+		185A5EAF1E8B5AD600E029D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EC5D6VRLX6;
+				INFOPLIST_FILE = roomRelarionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLZN.roomRelarionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = roomRelarion;
+			};
+			name = Debug;
+		};
+		185A5EB01E8B5AD600E029D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EC5D6VRLX6;
+				INFOPLIST_FILE = roomRelarionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YLZN.roomRelarionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = roomRelarion;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185A5E761E8B5AD600E029D2 /* Build configuration list for PBXProject "roomRelarion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185A5EA61E8B5AD600E029D2 /* Debug */,
+				185A5EA71E8B5AD600E029D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185A5EA81E8B5AD600E029D2 /* Build configuration list for PBXNativeTarget "roomRelarion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185A5EA91E8B5AD600E029D2 /* Debug */,
+				185A5EAA1E8B5AD600E029D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185A5EAB1E8B5AD600E029D2 /* Build configuration list for PBXNativeTarget "roomRelarionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185A5EAC1E8B5AD600E029D2 /* Debug */,
+				185A5EAD1E8B5AD600E029D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		185A5EAE1E8B5AD600E029D2 /* Build configuration list for PBXNativeTarget "roomRelarionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185A5EAF1E8B5AD600E029D2 /* Debug */,
+				185A5EB01E8B5AD600E029D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 185A5E731E8B5AD600E029D2 /* Project object */;
+}

@@ -1,0 +1,32 @@
+//
+//  roomRelarion.pch
+//  roomRelarion
+//
+//  Created by Apple on 2017/3/29.
+//  Copyright © 2017年 YaLeZhiNeng. All rights reserved.
+//
+
+
+#import "UIView+frame.h"
+
+#import "XMConst.h"
+
+#define XM_Width ([UIScreen mainScreen].bounds.size.width)
+#define XM_Height ([UIScreen mainScreen].bounds.size.height)
+
+
+
+#define XMFunc XMLog(@"%s",__func__)
+
+
+#ifdef DEBUG // 调试
+
+#define XMLog(...) NSLog(__VA_ARGS__);
+
+#else // 发布
+
+#define XMLog(...)
+
+#endif
+
+
