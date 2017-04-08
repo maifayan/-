@@ -114,7 +114,7 @@
     
     //我的
     UINavigationController *naVc4 = self.childViewControllers[3];
-        naVc4.tabBarItem.title = @"我的";
+        naVc4.tabBarItem.title = @"个人中心";
 
 
 }

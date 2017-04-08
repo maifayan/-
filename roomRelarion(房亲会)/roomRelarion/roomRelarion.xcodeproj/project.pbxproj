@@ -24,7 +24,8 @@
 		185A5EEC1E8B9F4F00E029D2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A5EEB1E8B9F4F00E029D2 /* MapKit.framework */; };
 		185A5EF31E8CACED00E029D2 /* houseResourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EF21E8CACED00E029D2 /* houseResourceController.m */; };
 		185A5EF81E8CB93300E029D2 /* mineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5EF71E8CB93300E029D2 /* mineController.m */; };
-		185A5F041E8CFD3200E029D2 /* loginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5F031E8CFD3200E029D2 /* loginRegisterController.m */; };
+		18681A901E975C210056EB8F /* loginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18681A8F1E975C210056EB8F /* loginRegisterController.m */; };
+		18681A961E977EA30056EB8F /* UIButton+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18681A951E977EA30056EB8F /* UIButton+extension.m */; };
 		1873DB241E8DEDA200504910 /* mineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB231E8DEDA200504910 /* mineCell.m */; };
 		1873DB2E1E8DFE1000504910 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB2D1E8DFE1000504910 /* UIBarButtonItem+Item.m */; };
 		1873DB341E8E053600504910 /* YNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB331E8E053600504910 /* YNavigationController.m */; };
@@ -85,8 +86,10 @@
 		185A5EF21E8CACED00E029D2 /* houseResourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = houseResourceController.m; sourceTree = "<group>"; };
 		185A5EF61E8CB93300E029D2 /* mineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mineController.h; sourceTree = "<group>"; };
 		185A5EF71E8CB93300E029D2 /* mineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mineController.m; sourceTree = "<group>"; };
-		185A5F021E8CFD3200E029D2 /* loginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = loginRegisterController.h; path = ../view/loginRegisterController.h; sourceTree = "<group>"; };
-		185A5F031E8CFD3200E029D2 /* loginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = loginRegisterController.m; path = ../view/loginRegisterController.m; sourceTree = "<group>"; };
+		18681A8E1E975C210056EB8F /* loginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginRegisterController.h; sourceTree = "<group>"; };
+		18681A8F1E975C210056EB8F /* loginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginRegisterController.m; sourceTree = "<group>"; };
+		18681A941E977EA30056EB8F /* UIButton+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+extension.h"; sourceTree = "<group>"; };
+		18681A951E977EA30056EB8F /* UIButton+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+extension.m"; sourceTree = "<group>"; };
 		1873DB221E8DEDA200504910 /* mineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mineCell.h; sourceTree = "<group>"; };
 		1873DB231E8DEDA200504910 /* mineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mineCell.m; sourceTree = "<group>"; };
 		1873DB2C1E8DFE1000504910 /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
@@ -328,10 +331,10 @@
 			children = (
 				185A5EF61E8CB93300E029D2 /* mineController.h */,
 				185A5EF71E8CB93300E029D2 /* mineController.m */,
+				18681A8E1E975C210056EB8F /* loginRegisterController.h */,
+				18681A8F1E975C210056EB8F /* loginRegisterController.m */,
 				1873DB3C1E8E508200504910 /* personalInformationController.h */,
 				1873DB3D1E8E508200504910 /* personalInformationController.m */,
-				185A5F021E8CFD3200E029D2 /* loginRegisterController.h */,
-				185A5F031E8CFD3200E029D2 /* loginRegisterController.m */,
 			);
 			path = contorller;
 			sourceTree = "<group>";
@@ -441,6 +444,8 @@
 				1873DB2D1E8DFE1000504910 /* UIBarButtonItem+Item.m */,
 				1873DB351E8E266B00504910 /* UIView+frame.h */,
 				1873DB361E8E266B00504910 /* UIView+frame.m */,
+				18681A941E977EA30056EB8F /* UIButton+extension.h */,
+				18681A951E977EA30056EB8F /* UIButton+extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -585,7 +590,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185A5F041E8CFD3200E029D2 /* loginRegisterController.m in Sources */,
+				18681A961E977EA30056EB8F /* UIButton+extension.m in Sources */,
 				185A5EDC1E8B5C7000E029D2 /* clientController.m in Sources */,
 				185A5EF81E8CB93300E029D2 /* mineController.m in Sources */,
 				1873DB371E8E266B00504910 /* UIView+frame.m in Sources */,
@@ -598,6 +603,7 @@
 				1873DB241E8DEDA200504910 /* mineCell.m in Sources */,
 				185A5E801E8B5AD600E029D2 /* main.m in Sources */,
 				185A5EDD1E8B5C7000E029D2 /* counselorController.m in Sources */,
+				18681A901E975C210056EB8F /* loginRegisterController.m in Sources */,
 				1873DB341E8E053600504910 /* YNavigationController.m in Sources */,
 				1873DB411E8E51E300504910 /* personalInformationCell.m in Sources */,
 				1831D1281E9485CF00A1CA16 /* UITextField+IndexPath.m in Sources */,

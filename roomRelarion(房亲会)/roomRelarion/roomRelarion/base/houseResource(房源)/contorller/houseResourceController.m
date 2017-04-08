@@ -18,6 +18,7 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"房源";
+    
 }
 
 - (void)didReceiveMemoryWarning {

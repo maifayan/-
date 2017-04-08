@@ -26,14 +26,18 @@ static NSString *meCellID = @"meCellID";//“我的”模块
 
 @implementation mineController
 
-
-
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    
+    [super viewWillAppear:animated];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
     
-    self.navigationItem.title = @"我的";
+//    self.navigationItem.title = @"我的";
     
     //去掉系统自带的分割线
     [self removeSeparator];
@@ -90,9 +94,14 @@ static NSString *meCellID = @"meCellID";//“我的”模块
     if (indexPath.section == 0 && indexPath.row == 0) {
         
         loginRegisterController *loginVc = [[loginRegisterController alloc]init];
+        //隐藏BottomBar
         loginVc.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController pushViewController:loginVc animated:YES];
+
+        
+        
+        
         
     }else if (indexPath.section == 1 && indexPath.row == 0){
    
