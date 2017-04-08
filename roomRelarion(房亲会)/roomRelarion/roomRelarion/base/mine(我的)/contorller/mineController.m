@@ -13,7 +13,7 @@
 
 
 
-@interface mineController ()<UITableViewDelegate,UITableViewDataSource>
+@interface mineController ()<UITableViewDelegate,UITableViewDataSource,CAAnimationDelegate>
 
 
 @property (nonatomic,strong) NSMutableDictionary *setionDC;

@@ -7,7 +7,7 @@
 //
 
 #import "informationCell.h"
-#import "UITextField+IndexPath.h"
+
 @interface informationCell ()
 
 @property (strong, nonatomic) UITextField *textField;

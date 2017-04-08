@@ -32,6 +32,7 @@
 		1873DB371E8E266B00504910 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB361E8E266B00504910 /* UIView+frame.m */; };
 		1873DB3E1E8E508200504910 /* personalInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB3D1E8E508200504910 /* personalInformationController.m */; };
 		1873DB411E8E51E300504910 /* personalInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB401E8E51E300504910 /* personalInformationCell.m */; };
+		723592699ACD8ACB4425C346 /* libPods-roomRelarion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDCDABEDAC4DBEC46A169FB /* libPods-roomRelarion.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1831D1261E9485CF00A1CA16 /* UITextField+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+IndexPath.h"; sourceTree = "<group>"; };
-		1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+IndexPath.m"; sourceTree = "<group>"; };
+		1831D1261E9485CF00A1CA16 /* UITextField+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+IndexPath.h"; path = "../../other/view/UITextField+IndexPath.h"; sourceTree = "<group>"; };
+		1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+IndexPath.m"; path = "../../other/view/UITextField+IndexPath.m"; sourceTree = "<group>"; };
 		1831E4341E9078CC00739F2D /* XMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMConst.h; sourceTree = "<group>"; };
 		1831E4351E9078CC00739F2D /* XMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMConst.m; sourceTree = "<group>"; };
 		185390D21E8F47B5007EB747 /* informationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = informationCell.h; sourceTree = "<group>"; };
@@ -102,6 +103,9 @@
 		1873DB3D1E8E508200504910 /* personalInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalInformationController.m; sourceTree = "<group>"; };
 		1873DB3F1E8E51E300504910 /* personalInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalInformationCell.h; sourceTree = "<group>"; };
 		1873DB401E8E51E300504910 /* personalInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalInformationCell.m; sourceTree = "<group>"; };
+		49D054A32DF74A062FCA5B39 /* Pods-roomRelarion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomRelarion.release.xcconfig"; path = "Pods/Target Support Files/Pods-roomRelarion/Pods-roomRelarion.release.xcconfig"; sourceTree = "<group>"; };
+		F16A8A44D25DD685C3D1C93B /* Pods-roomRelarion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomRelarion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomRelarion/Pods-roomRelarion.debug.xcconfig"; sourceTree = "<group>"; };
+		FFDCDABEDAC4DBEC46A169FB /* libPods-roomRelarion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-roomRelarion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185A5EEC1E8B9F4F00E029D2 /* MapKit.framework in Frameworks */,
+				723592699ACD8ACB4425C346 /* libPods-roomRelarion.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +165,6 @@
 				185A5EE61E8B64E800E029D2 /* roomRelarion.pch */,
 				1831E4341E9078CC00739F2D /* XMConst.h */,
 				1831E4351E9078CC00739F2D /* XMConst.m */,
-				1831D1261E9485CF00A1CA16 /* UITextField+IndexPath.h */,
-				1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				185A5EA21E8B5AD600E029D2 /* roomRelarionUITests */,
 				185A5E7C1E8B5AD600E029D2 /* Products */,
 				185A5EEA1E8B9F4F00E029D2 /* Frameworks */,
+				67E944DFC4A690016A1E43D6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -400,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				185A5EEB1E8B9F4F00E029D2 /* MapKit.framework */,
+				FFDCDABEDAC4DBEC46A169FB /* libPods-roomRelarion.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -446,8 +451,19 @@
 				1873DB361E8E266B00504910 /* UIView+frame.m */,
 				18681A941E977EA30056EB8F /* UIButton+extension.h */,
 				18681A951E977EA30056EB8F /* UIButton+extension.m */,
+				1831D1261E9485CF00A1CA16 /* UITextField+IndexPath.h */,
+				1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		67E944DFC4A690016A1E43D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F16A8A44D25DD685C3D1C93B /* Pods-roomRelarion.debug.xcconfig */,
+				49D054A32DF74A062FCA5B39 /* Pods-roomRelarion.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,9 +473,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 185A5EA81E8B5AD600E029D2 /* Build configuration list for PBXNativeTarget "roomRelarion" */;
 			buildPhases = (
+				0E8A03F85967D0BEEFBD52D0 /* [CP] Check Pods Manifest.lock */,
 				185A5E771E8B5AD600E029D2 /* Sources */,
 				185A5E781E8B5AD600E029D2 /* Frameworks */,
 				185A5E791E8B5AD600E029D2 /* Resources */,
+				9A93EA4F3D71B66CFA13C8F3 /* [CP] Embed Pods Frameworks */,
+				7627E2F3F0B8A3D8844A96E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -584,6 +603,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E8A03F85967D0BEEFBD52D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7627E2F3F0B8A3D8844A96E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roomRelarion/Pods-roomRelarion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A93EA4F3D71B66CFA13C8F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-roomRelarion/Pods-roomRelarion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		185A5E771E8B5AD600E029D2 /* Sources */ = {
@@ -753,6 +820,7 @@
 		};
 		185A5EA91E8B5AD600E029D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16A8A44D25DD685C3D1C93B /* Pods-roomRelarion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -766,6 +834,7 @@
 		};
 		185A5EAA1E8B5AD600E029D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D054A32DF74A062FCA5B39 /* Pods-roomRelarion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

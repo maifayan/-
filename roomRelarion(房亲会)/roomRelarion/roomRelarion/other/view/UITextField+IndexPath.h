@@ -11,5 +11,5 @@
 @interface UITextField (IndexPath)
 @property (nonatomic,strong) NSIndexPath *indexPath;
 
-
++ (UITextField *)setFrame:(CGRect)frame borderStyle:(UITextBorderStyle)borderStyle placeholder:(NSString *)placeholder;
 @end

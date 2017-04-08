@@ -11,4 +11,8 @@
 @interface UIButton (extension)
 
 + (UIButton *)setTitle:(NSString *)title color:(UIColor *)color frame:(CGRect)frame addTarget:(id)target action:(SEL)action;
+
++ (UIButton *)setTitle:(NSString *)title BackgroundColor:(UIColor *)color frame:(CGRect)frame addTarget:(id)target action:(SEL)action;
+
+
 @end

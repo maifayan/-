@@ -15,12 +15,20 @@
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:color forState:UIControlStateNormal];
     [button setFrame:frame];
-    [button sizeToFit];
+    [button setFont:[UIFont systemFontOfSize:14]];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
 
-
++ (UIButton *)setTitle:(NSString *)title BackgroundColor:(UIColor *)color frame:(CGRect)frame addTarget:(id)target action:(SEL)action{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setBackgroundColor:color];
+    [button setFrame:frame];
+    [button setFont:[UIFont systemFontOfSize:14]];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    return button;
+}
 
 
 

@@ -18,6 +18,17 @@ static char indexPathKey;
     objc_setAssociatedObject(self, &indexPathKey, indexPath, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
++ (UITextField *)setFrame:(CGRect)frame borderStyle:(UITextBorderStyle)borderStyle placeholder:(NSString *)placeholder
+{
+    UITextField *textField =[[UITextField alloc]initWithFrame:frame];
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.backgroundColor = [UIColor whiteColor];
+    textField.placeholder = placeholder;
+    textField.font = [UIFont systemFontOfSize:14];
+    textField.textColor = [UIColor blackColor];
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    return textField;
+}
 
 
 @end
