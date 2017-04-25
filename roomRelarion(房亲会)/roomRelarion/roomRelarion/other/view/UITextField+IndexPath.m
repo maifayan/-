@@ -26,6 +26,7 @@ static char indexPathKey;
     textField.placeholder = placeholder;
     textField.font = [UIFont systemFontOfSize:14];
     textField.textColor = [UIColor blackColor];
+    textField.layer.cornerRadius = 5;
     textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     return textField;
 }

@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182619331EAB031F00E89623 /* callNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182619321EAB031F00E89623 /* callNameModel.m */; };
+		182619361EAB069800E89623 /* informationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182619351EAB069800E89623 /* informationModel.m */; };
 		1831D1281E9485CF00A1CA16 /* UITextField+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */; };
 		1831E4361E9078CC00739F2D /* XMConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831E4351E9078CC00739F2D /* XMConst.m */; };
+		18527B5B1EAD957D0062B863 /* changeCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18527B5A1EAD957D0062B863 /* changeCodeController.m */; };
+		18527B5E1EADE2A00062B863 /* bankAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18527B5D1EADE2A00062B863 /* bankAccountController.m */; };
+		18527B621EADEDAF0062B863 /* bankAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18527B601EADEDAF0062B863 /* bankAccountCell.m */; };
+		18527B631EADEDAF0062B863 /* bankAccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18527B611EADEDAF0062B863 /* bankAccountCell.xib */; };
 		185390D41E8F47B5007EB747 /* informationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185390D31E8F47B5007EB747 /* informationCell.m */; };
 		185A5E801E8B5AD600E029D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 185A5E7F1E8B5AD600E029D2 /* main.m */; };
 		185A5E891E8B5AD600E029D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185A5E871E8B5AD600E029D2 /* Main.storyboard */; };
@@ -32,6 +38,10 @@
 		1873DB371E8E266B00504910 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB361E8E266B00504910 /* UIView+frame.m */; };
 		1873DB3E1E8E508200504910 /* personalInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB3D1E8E508200504910 /* personalInformationController.m */; };
 		1873DB411E8E51E300504910 /* personalInformationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1873DB401E8E51E300504910 /* personalInformationCell.m */; };
+		187EEF6D1EA5BA9300FFF09D /* AppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 187EEF6C1EA5BA9300FFF09D /* AppUtil.m */; };
+		187EEF751EA5DEF100FFF09D /* OLGhostAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187EEF711EA5DEF100FFF09D /* OLGhostAlertView.m */; };
+		187EEF761EA5DEF100FFF09D /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 187EEF741EA5DEF100FFF09D /* SSKeychain.m */; };
+		188644C91EAEE8DB009D0E7E /* bankAccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188644C81EAEE8DB009D0E7E /* bankAccountModel.m */; };
 		723592699ACD8ACB4425C346 /* libPods-roomRelarion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDCDABEDAC4DBEC46A169FB /* libPods-roomRelarion.a */; };
 /* End PBXBuildFile section */
 
@@ -53,10 +63,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182619311EAB031F00E89623 /* callNameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callNameModel.h; sourceTree = "<group>"; };
+		182619321EAB031F00E89623 /* callNameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = callNameModel.m; sourceTree = "<group>"; };
+		182619341EAB069800E89623 /* informationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = informationModel.h; sourceTree = "<group>"; };
+		182619351EAB069800E89623 /* informationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = informationModel.m; sourceTree = "<group>"; };
 		1831D1261E9485CF00A1CA16 /* UITextField+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+IndexPath.h"; path = "../../other/view/UITextField+IndexPath.h"; sourceTree = "<group>"; };
 		1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+IndexPath.m"; path = "../../other/view/UITextField+IndexPath.m"; sourceTree = "<group>"; };
 		1831E4341E9078CC00739F2D /* XMConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMConst.h; sourceTree = "<group>"; };
 		1831E4351E9078CC00739F2D /* XMConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMConst.m; sourceTree = "<group>"; };
+		18527B591EAD957D0062B863 /* changeCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changeCodeController.h; sourceTree = "<group>"; };
+		18527B5A1EAD957D0062B863 /* changeCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changeCodeController.m; sourceTree = "<group>"; };
+		18527B5C1EADE2A00062B863 /* bankAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bankAccountController.h; sourceTree = "<group>"; };
+		18527B5D1EADE2A00062B863 /* bankAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bankAccountController.m; sourceTree = "<group>"; };
+		18527B5F1EADEDAF0062B863 /* bankAccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bankAccountCell.h; sourceTree = "<group>"; };
+		18527B601EADEDAF0062B863 /* bankAccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bankAccountCell.m; sourceTree = "<group>"; };
+		18527B611EADEDAF0062B863 /* bankAccountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = bankAccountCell.xib; sourceTree = "<group>"; };
 		185390D21E8F47B5007EB747 /* informationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = informationCell.h; sourceTree = "<group>"; };
 		185390D31E8F47B5007EB747 /* informationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = informationCell.m; sourceTree = "<group>"; };
 		185A5E7B1E8B5AD600E029D2 /* roomRelarion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = roomRelarion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +124,14 @@
 		1873DB3D1E8E508200504910 /* personalInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalInformationController.m; sourceTree = "<group>"; };
 		1873DB3F1E8E51E300504910 /* personalInformationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalInformationCell.h; sourceTree = "<group>"; };
 		1873DB401E8E51E300504910 /* personalInformationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalInformationCell.m; sourceTree = "<group>"; };
+		187EEF6B1EA5BA9300FFF09D /* AppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtil.h; sourceTree = "<group>"; };
+		187EEF6C1EA5BA9300FFF09D /* AppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtil.m; sourceTree = "<group>"; };
+		187EEF701EA5DEF100FFF09D /* OLGhostAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLGhostAlertView.h; sourceTree = "<group>"; };
+		187EEF711EA5DEF100FFF09D /* OLGhostAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLGhostAlertView.m; sourceTree = "<group>"; };
+		187EEF731EA5DEF100FFF09D /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		187EEF741EA5DEF100FFF09D /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		188644C71EAEE8DB009D0E7E /* bankAccountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bankAccountModel.h; sourceTree = "<group>"; };
+		188644C81EAEE8DB009D0E7E /* bankAccountModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bankAccountModel.m; sourceTree = "<group>"; };
 		49D054A32DF74A062FCA5B39 /* Pods-roomRelarion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomRelarion.release.xcconfig"; path = "Pods/Target Support Files/Pods-roomRelarion/Pods-roomRelarion.release.xcconfig"; sourceTree = "<group>"; };
 		F16A8A44D25DD685C3D1C93B /* Pods-roomRelarion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-roomRelarion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-roomRelarion/Pods-roomRelarion.debug.xcconfig"; sourceTree = "<group>"; };
 		FFDCDABEDAC4DBEC46A169FB /* libPods-roomRelarion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-roomRelarion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +194,8 @@
 				185A5EE61E8B64E800E029D2 /* roomRelarion.pch */,
 				1831E4341E9078CC00739F2D /* XMConst.h */,
 				1831E4351E9078CC00739F2D /* XMConst.m */,
+				187EEF6B1EA5BA9300FFF09D /* AppUtil.h */,
+				187EEF6C1EA5BA9300FFF09D /* AppUtil.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -194,6 +225,7 @@
 		185A5E7D1E8B5AD600E029D2 /* roomRelarion */ = {
 			isa = PBXGroup;
 			children = (
+				187EEF6E1EA5DEF100FFF09D /* Lib */,
 				185A5EB51E8B5C7000E029D2 /* base */,
 				1831E4301E90783B00739F2D /* other */,
 				185A5EB11E8B5B9800E029D2 /* Main(主要) */,
@@ -335,10 +367,14 @@
 			children = (
 				185A5EF61E8CB93300E029D2 /* mineController.h */,
 				185A5EF71E8CB93300E029D2 /* mineController.m */,
+				18527B591EAD957D0062B863 /* changeCodeController.h */,
+				18527B5A1EAD957D0062B863 /* changeCodeController.m */,
 				18681A8E1E975C210056EB8F /* loginRegisterController.h */,
 				18681A8F1E975C210056EB8F /* loginRegisterController.m */,
 				1873DB3C1E8E508200504910 /* personalInformationController.h */,
 				1873DB3D1E8E508200504910 /* personalInformationController.m */,
+				18527B5C1EADE2A00062B863 /* bankAccountController.h */,
+				18527B5D1EADE2A00062B863 /* bankAccountController.m */,
 			);
 			path = contorller;
 			sourceTree = "<group>";
@@ -346,6 +382,12 @@
 		185A5ECC1E8B5C7000E029D2 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				182619311EAB031F00E89623 /* callNameModel.h */,
+				182619321EAB031F00E89623 /* callNameModel.m */,
+				182619341EAB069800E89623 /* informationModel.h */,
+				182619351EAB069800E89623 /* informationModel.m */,
+				188644C71EAEE8DB009D0E7E /* bankAccountModel.h */,
+				188644C81EAEE8DB009D0E7E /* bankAccountModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -359,6 +401,9 @@
 				1873DB401E8E51E300504910 /* personalInformationCell.m */,
 				185390D21E8F47B5007EB747 /* informationCell.h */,
 				185390D31E8F47B5007EB747 /* informationCell.m */,
+				18527B5F1EADEDAF0062B863 /* bankAccountCell.h */,
+				18527B601EADEDAF0062B863 /* bankAccountCell.m */,
+				18527B611EADEDAF0062B863 /* bankAccountCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -455,6 +500,33 @@
 				1831D1271E9485CF00A1CA16 /* UITextField+IndexPath.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		187EEF6E1EA5DEF100FFF09D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				187EEF6F1EA5DEF100FFF09D /* GhostAlertView */,
+				187EEF721EA5DEF100FFF09D /* SSKeychain */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		187EEF6F1EA5DEF100FFF09D /* GhostAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				187EEF701EA5DEF100FFF09D /* OLGhostAlertView.h */,
+				187EEF711EA5DEF100FFF09D /* OLGhostAlertView.m */,
+			);
+			path = GhostAlertView;
+			sourceTree = "<group>";
+		};
+		187EEF721EA5DEF100FFF09D /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				187EEF731EA5DEF100FFF09D /* SSKeychain.h */,
+				187EEF741EA5DEF100FFF09D /* SSKeychain.m */,
+			);
+			path = SSKeychain;
 			sourceTree = "<group>";
 		};
 		67E944DFC4A690016A1E43D6 /* Pods */ = {
@@ -583,6 +655,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185A5E8E1E8B5AD600E029D2 /* LaunchScreen.storyboard in Resources */,
+				18527B631EADEDAF0062B863 /* bankAccountCell.xib in Resources */,
 				185A5E8B1E8B5AD600E029D2 /* Assets.xcassets in Resources */,
 				185A5E891E8B5AD600E029D2 /* Main.storyboard in Resources */,
 			);
@@ -660,22 +733,31 @@
 				18681A961E977EA30056EB8F /* UIButton+extension.m in Sources */,
 				185A5EDC1E8B5C7000E029D2 /* clientController.m in Sources */,
 				185A5EF81E8CB93300E029D2 /* mineController.m in Sources */,
+				18527B5E1EADE2A00062B863 /* bankAccountController.m in Sources */,
 				1873DB371E8E266B00504910 /* UIView+frame.m in Sources */,
 				185A5EB41E8B5B9800E029D2 /* AppDelegate.m in Sources */,
 				1873DB3E1E8E508200504910 /* personalInformationController.m in Sources */,
 				185A5EF31E8CACED00E029D2 /* houseResourceController.m in Sources */,
 				185390D41E8F47B5007EB747 /* informationCell.m in Sources */,
 				185A5EE21E8B5C7000E029D2 /* YLZNTabBar.m in Sources */,
+				18527B5B1EAD957D0062B863 /* changeCodeController.m in Sources */,
+				188644C91EAEE8DB009D0E7E /* bankAccountModel.m in Sources */,
 				1873DB2E1E8DFE1000504910 /* UIBarButtonItem+Item.m in Sources */,
 				1873DB241E8DEDA200504910 /* mineCell.m in Sources */,
 				185A5E801E8B5AD600E029D2 /* main.m in Sources */,
+				182619361EAB069800E89623 /* informationModel.m in Sources */,
 				185A5EDD1E8B5C7000E029D2 /* counselorController.m in Sources */,
+				187EEF751EA5DEF100FFF09D /* OLGhostAlertView.m in Sources */,
+				18527B621EADEDAF0062B863 /* bankAccountCell.m in Sources */,
 				18681A901E975C210056EB8F /* loginRegisterController.m in Sources */,
+				182619331EAB031F00E89623 /* callNameModel.m in Sources */,
 				1873DB341E8E053600504910 /* YNavigationController.m in Sources */,
 				1873DB411E8E51E300504910 /* personalInformationCell.m in Sources */,
 				1831D1281E9485CF00A1CA16 /* UITextField+IndexPath.m in Sources */,
 				1831E4361E9078CC00739F2D /* XMConst.m in Sources */,
+				187EEF761EA5DEF100FFF09D /* SSKeychain.m in Sources */,
 				185A5EE51E8B5D9600E029D2 /* YLZNTabBarController.m in Sources */,
+				187EEF6D1EA5BA9300FFF09D /* AppUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

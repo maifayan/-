@@ -25,6 +25,7 @@
     [button setTitle:title forState:UIControlStateNormal];
     [button setBackgroundColor:color];
     [button setFrame:frame];
+    [button.layer setCornerRadius:9];
     [button setFont:[UIFont systemFontOfSize:14]];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return button;

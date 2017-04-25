@@ -10,10 +10,12 @@
 #import "loginRegisterController.h"
 #import "mineCell.h"
 #import "personalInformationController.h"
+#import "changeCodeController.h"
+#import "bankAccountController.h"
 
+#import <EaseMob.h>
 
-
-@interface mineController ()<UITableViewDelegate,UITableViewDataSource,CAAnimationDelegate>
+@interface mineController ()<CAAnimationDelegate>
 
 
 @property (nonatomic,strong) NSMutableDictionary *setionDC;
@@ -92,7 +94,7 @@ static NSString *meCellID = @"meCellID";//“我的”模块
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.section == 0 && indexPath.row == 0) {
-        
+        //登录注册
         loginRegisterController *loginVc = [[loginRegisterController alloc]init];
         //隐藏BottomBar
         loginVc.hidesBottomBarWhenPushed = YES;
@@ -100,20 +102,31 @@ static NSString *meCellID = @"meCellID";//“我的”模块
         [self.navigationController pushViewController:loginVc animated:YES];
 
         
-        
-        
-        
     }else if (indexPath.section == 1 && indexPath.row == 0){
-   
+   //个人信息
         personalInformationController *personalTableVc = [[personalInformationController alloc]init];
         
         personalTableVc.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController pushViewController:personalTableVc animated:YES];
         
+    }else if (indexPath.section == 1 && indexPath.row == 1){
+        //修改密码
+        changeCodeController *changeVc = [[changeCodeController alloc]init];
+        
+        changeVc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:changeVc animated:YES];
+        
+    }else if (indexPath.section == 1 && indexPath.row == 3){
+        bankAccountController *bankAccountVc = [[bankAccountController alloc]init];
+        
+        bankAccountVc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:bankAccountVc animated:YES];
     }
-    
-    
+    else if (indexPath.section == 1 && indexPath.row == 4) {
+        [self logOff:nil];
+    }
+
 
 }
 #pragma mark - 设置cell组数和行数、宽高
@@ -146,11 +159,15 @@ static NSString *meCellID = @"meCellID";//“我的”模块
 }
 
 //每组头视图高度
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    
+//    return 20;
+//}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 20;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -167,7 +184,16 @@ static NSString *meCellID = @"meCellID";//“我的”模块
         [cell setWithImage:nil text:_secondArr[indexPath.row]];
     }
     
+    
     return cell;
+}
+// 退出登录
+- (void)logOff:(id)sender{
+    [[EaseMob sharedInstance].chatManager asyncLogoffWithUnbindDeviceToken:YES completion:^(NSDictionary *info, EMError *error) {
+        if (!error) {
+            NSLog(@"退出成功");
+        }
+    } onQueue:nil];
 }
 
 

@@ -10,6 +10,8 @@
 #import "personalInformationCell.h"
 #import "informationCell.h"
 #import "UITextField+IndexPath.h"
+#import "callNameModel.h"
+#import "informationModel.h"
 
 @interface personalInformationController ()
 
@@ -19,14 +21,15 @@
 @end
 
 
-static NSString *cellID = @"cellID";
+
 static NSString *infoCellID = @"infoCell";
 @implementation personalInformationController
 
 #pragma mark - 添加字典和数组
 - (NSArray *)titleArr{
     if (!_titleArr) {
-        _titleArr = @[@"姓名：",@"显示姓名：",@"昵称：",@"通讯地址：",@"身份证号："];
+        _titleArr = @[@"姓名",@"性别",@"昵称",@"籍贯",@"身份证号",@"手机号码",@"通讯地址"];
+    
     }
     return _titleArr;
 }
@@ -35,6 +38,8 @@ static NSString *infoCellID = @"infoCell";
 - (NSMutableArray *)arrayDataSouce{
     if (!_arrayDataSouce) {
         _arrayDataSouce = [NSMutableArray array];
+        [_arrayDataSouce addObject:@""];
+        [_arrayDataSouce addObject:@""];
         [_arrayDataSouce addObject:@""];
         [_arrayDataSouce addObject:@""];
         [_arrayDataSouce addObject:@""];
@@ -74,13 +79,12 @@ static NSString *infoCellID = @"infoCell";
     //手势
     [self tapGestureRecognizer];
     
-    //注册personal cell
-    [self.tableView registerClass:[personalInformationCell class] forCellReuseIdentifier:cellID];
+
     //注册information cell
     [self.tableView registerClass:[informationCell class] forCellReuseIdentifier:infoCellID];
     
 }
-//手势
+#pragma mark - 手势
 - (void)tapGestureRecognizer{
     UITapGestureRecognizer *gestur = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hiddenKeyBord)];
     [self.tableView addGestureRecognizer:gestur];
@@ -90,7 +94,7 @@ static NSString *infoCellID = @"infoCell";
     [self.view endEditing:YES];
 }
 
-//通知填写信息
+#pragma mark -通知填写信息
 - (void)setNotification{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChanged:) name:@"UITextFieldTextDidChangeNotification" object:nil];
 }
@@ -123,22 +127,15 @@ static NSString *infoCellID = @"infoCell";
 // 创建几组
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return 4;
+    return 2;
 }
 //每组多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     if (section == 0) {
         return 1;
-    }else if (section == 1){
-        return 5;
-    }else if (section == 2){
-        return 5;
-    }else {
-        return 2;
-    }
-    
-    
+    }    
+    return self.titleArr.count;
 }
 //每组行数的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -152,45 +149,36 @@ static NSString *infoCellID = @"infoCell";
     
 }
 
-//每组透视图高度
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
+//每组尾视图高度
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 10;
 }
+
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.section == 0) {
-        personalInformationCell *headcell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+
+        callNameModel *callModel = [[callNameModel alloc]init];
+        callModel.callName = @"昵称";
+        callModel.imageName = @"setup-head-default";
+        personalInformationCell *headcell = [personalInformationCell cellWithTableView:tableView mineModel:callModel];
         return headcell;
+        
     }else{
-    
         informationCell * infoCell = [tableView dequeueReusableCellWithIdentifier:infoCellID forIndexPath:indexPath];
         
-        if (indexPath.section == 1 ) {
-            [infoCell setTitleString:self.titleArr[indexPath.row] andDataString:self.arrayDataSouce[indexPath.row] andIndexPath:indexPath];
-        }
-        
-        
-        //显示姓名开关
-        if (indexPath.section == 1 && indexPath.row == 1) {
-            
-            UISwitch *cellSwitch = [[UISwitch alloc]init];
-            
-            cellSwitch.frame = CGRectMake(300, 6, 0, 0);
-            [cellSwitch addTarget:self action:@selector(switchClick) forControlEvents:UIControlEventTouchUpInside];
-            [infoCell.contentView addSubview:cellSwitch];
-        }
+            [infoCell setDataString:self.titleArr[indexPath.row] andIndexPath:indexPath];
         
         return infoCell;
+        
     }
+    
     
 }
 
-- (void)switchClick{
-    XMFunc;
-}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     NSLog(@"要隐藏键盘了.......22222222222");

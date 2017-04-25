@@ -7,11 +7,13 @@
 //
 
 #import "informationCell.h"
+#import "informationModel.h"
 
 @interface informationCell ()
 
+@property (strong, nonatomic) UIImageView *imageV;
 @property (strong, nonatomic) UITextField *textField;
-@property (strong, nonatomic) UILabel *titleLabel;
+
 
 @end
 
@@ -20,27 +22,45 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self == [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        
+        [self.contentView addSubview:self.imageV];
         [self.contentView addSubview:self.textField];
-        [self.contentView addSubview:self.titleLabel];
+        
+        
     }
     
     return self;
 }
 
-- (void)setTitleString:(NSString *)string andDataString:(NSString *)dataString andIndexPath:(NSIndexPath *)indexPath{
-    self.textField.text =dataString;
-    self.titleLabel.text = string;
+- (void)setDataString:(NSString *)dataString andIndexPath:(NSIndexPath *)indexPath{
+    self.textField.placeholder = dataString;
     self.textField.indexPath = indexPath;
 }
 
+#pragma mark - UIImageView
+- (UIImageView *)imageV{
+    
+    if (!_imageV) {
+        
+        _imageV = [[UIImageView alloc]initWithFrame:CGRectMake(20, 15, 20, 20)];
+        
+        _imageV.backgroundColor = [UIColor clearColor];
+//        _imageV.image = [UIImage imageNamed:@"icon_ identity"];
+        
+    }
+    
+    return _imageV;
+}
+
+#pragma mark - textField
 - (UITextField *)textField{
 
     if (!_textField) {
-        _textField = [[UITextField alloc]initWithFrame:CGRectMake(120, 5, 160, 30)];
-        
-        _textField.layer.borderColor = [UIColor cyanColor].CGColor;
-        _textField.layer.borderWidth = 0.5;
+        _textField = [[UITextField alloc]initWithFrame:CGRectMake(60, 7, XM_Width - 60 -60, 35)];
+        _textField.backgroundColor = [UIColor clearColor];
+        _textField.layer.cornerRadius = 9;
+        _textField.borderStyle = UITextBorderStyleRoundedRect;
+        _textField.layer.borderColor = [UIColor clearColor].CGColor;
+        _textField.layer.borderWidth = 0;
         
     }
     
@@ -48,12 +68,6 @@
 }
 
 
-- (UILabel *)titleLabel{
-    if (!_titleLabel) {
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, 100, 40)];
-    }
-    return _titleLabel;
-}
 
 
 

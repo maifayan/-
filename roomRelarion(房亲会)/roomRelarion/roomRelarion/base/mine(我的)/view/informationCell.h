@@ -10,6 +10,8 @@
 
 @interface informationCell : UITableViewCell
 
-- (void)setTitleString:(NSString *)string andDataString:(NSString *)dataString andIndexPath:(NSIndexPath *)indexPath;
+- (void)setDataString:(NSString *)dataString andIndexPath:(NSIndexPath *)indexPath;
+
+
 
 @end

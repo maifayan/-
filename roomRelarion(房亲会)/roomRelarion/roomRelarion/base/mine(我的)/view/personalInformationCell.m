@@ -7,6 +7,7 @@
 //
 
 #import "personalInformationCell.h"
+#import "callNameModel.h"
 
 @implementation personalInformationCell
 
@@ -22,20 +23,45 @@
 
 
 - (void)setupUI{
+    //图片
+    _imageV = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 50, 50)];
+    _imageV.backgroundColor = [UIColor clearColor];
+    [self.contentView addSubview:_imageV];
+    //称呼
+    _nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 20)];
+    _nameLabel.backgroundColor = [UIColor clearColor];
+//    [_nameLabel sizeToFit];
+    [_nameLabel setFont:[UIFont systemFontOfSize:16]];
+    [self.contentView addSubview:_nameLabel];
+    //欢迎词
+    _welcomeLabel = [[UILabel alloc]initWithFrame:CGRectMake(70, 45, 80, 20)];
+    _welcomeLabel.backgroundColor = [UIColor clearColor];
+    _welcomeLabel.text = @"欢迎来到房亲会！";
+    [_welcomeLabel sizeToFit];
+    [_welcomeLabel setFont:[UIFont systemFontOfSize:13]];
+    [self.contentView addSubview:_welcomeLabel];
     
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 50, 50)];
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
     
-    imageView.backgroundColor = [UIColor redColor];
-    [self.contentView addSubview:imageView];
-    UILabel *nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(70, 10, 80, 20)];
-    nameLabel.text = @"昵称";
-    [nameLabel sizeToFit];
-    [self.contentView addSubview:nameLabel];
-    UILabel *welcomeLabel = [[UILabel alloc]initWithFrame:CGRectMake(70, 45, 80, 20)];
-    welcomeLabel.text = @"欢迎来到房亲会！";
-    [welcomeLabel sizeToFit];
-    [welcomeLabel setFont:[UIFont systemFontOfSize:13]];
-    [self.contentView addSubview:welcomeLabel];
+    // Configure the view for the selected state
+}
+
++(instancetype)cellWithTableView:(UITableView *)tableView mineModel:(callNameModel*)mineModel{
+    static NSString *personCell = @"personCell";
+    personalInformationCell *cell = [tableView dequeueReusableCellWithIdentifier:personCell];
+    if (cell == nil) {
+        cell = [[personalInformationCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:personCell];
+    }
+    NSString *imageStr = [NSString stringWithFormat:@"%@", mineModel.imageName];
+    cell.imageV.image = [UIImage imageNamed:imageStr];
+    cell.nameLabel.text = mineModel.callName;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
+    
+    return cell;
     
 }
 
